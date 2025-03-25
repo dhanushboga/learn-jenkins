@@ -25,19 +25,19 @@ pipeline {
             mail to: "dhanushboga555@gmail.com",
             subject: "Test Email",
             body: "Test"
-            echo "this section runs always irrespective of success or failure"
+            // echo "this section runs always irrespective of success or failure"
         }
         success{
             mail to: "dhanushboga555@gmail.com",
             subject: "Test Email success",
             body: "Test success"
-            echo "this section runs only if pipeline success"
+            // echo "this section runs only if pipeline success"
         }
         failure{
             mail to: "dhanushboga555@gmail.com",
             subject: "Test Email failure",
             body: "Test failure"
-            echo "this section runs only if pipeline failure"
+            // echo "this section runs only if pipeline failure"
         }
     }
 }
